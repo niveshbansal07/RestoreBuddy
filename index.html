@@ -287,7 +287,7 @@
           <h3 class="product-title">${product.name}</h3>
           <p class="product-description">${product.description}</p>
           <div class="product-rating">★★★★★ (${product.rating})</div>
-          <button class="product-btn" onclick="alert('Price: ${product.price}')">SHOW PRICE</button>
+           <button class="product-btn" onclick="showPrice('${product.link}')">SHOW PRICE</button>
         </div>
       `;
                     container.appendChild(card);
@@ -303,6 +303,4 @@
     <script src="assets/js/nav-ftr.js"></script>
 </body>
 
-
 </html>
-
