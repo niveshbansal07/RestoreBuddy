@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "name": "Orbital Sander Pro — Model X",
-    "description": "Professional grade orbital sander perfect for paint removal and surface preparation. Features variable speed control, ergonomic design, and multiple sanding pads.",
-    "image": "https://via.placeholder.com/250x150.png?text=Orbital+Sander",
-    "rating": 4.8,
-    "link": "https://amzn.to/46TDHU3"
+    "name": "Spray Paint",
+    "description": "RESIL VISTA Silver Spray Paint 400ml (290g) | DIY Acrylic Spray Paint | High-Coverage, Quick-Drying Acrylic Spray Paint for Metal, Wood, Walls, Automotives | Multi-Surface, Long-Lasting Finish",
+    "image": "https://m.media-amazon.com/images/I/419ASka3TjL._SY300_SX300_QL70_FMwebp_.jpg",
+    "rating": 4.1,
+    "link": "https://amzn.to/42yG9ya"
   },
   {
     "id": 2,
-    "name": "Cordless Drill Master 5000",
-    "description": "High-performance cordless drill with variable speed, long battery life, and ergonomic grip.",
-    "image": "https://via.placeholder.com/250x150.png?text=Cordless+Drill",
-    "rating": 4.5,
-    "link": "https://amzn.to/46TDHU3"
+    "name": "Spray Paint",
+    "description": "Dulux Simply Refresh Spray Paint | DIY, Quick Drying Gloss Finish for Metal, Wooden Furniture, Plastic, Walls, Cars & Bikes – 400ML (Signal_Red)",
+    "image": "https://m.media-amazon.com/images/I/61D1fwW17pL._SX679_.jpg",
+    "rating": 4.0,
+    "link": "https://amzn.to/4o9e88E"
   },
   {
     "id": 3,
-    "name": "Precision Screwdriver Set",
-    "description": "Complete set of precision screwdrivers for electronics and small repair work. Durable and comfortable handles.",
-    "image": "https://via.placeholder.com/250x150.png?text=Screwdriver+Set",
+    "name": "Spray Paint",
+    "description": "Mario Spray Paint – 1005 Fluorescent Yellow (400ml) | Quick-Drying Multipurpose Paint for Cars, Bikes, Metal, Wood, Walls, Plastic | Durable Finish for DIY Use",
+    "image": "https://m.media-amazon.com/images/I/61PFnCujWjL._SX522_.jpg",
     "rating": 4.7,
-    "link": "https://amzn.to/46TDHU3"
+    "link": "https://amzn.to/4mYko1Y"
   }
 ]
