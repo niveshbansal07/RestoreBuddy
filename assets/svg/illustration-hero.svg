@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" fill="none">
+  <defs>
+    <symbol id="hero-bike" viewBox="0 0 300 200">
+      <!-- Background gradient -->
+      <defs>
+        <linearGradient id="bikeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#0f6769;stop-opacity:0.1" />
+          <stop offset="100%" style="stop-color:#f39c12;stop-opacity:0.1" />
+        </linearGradient>
+      </defs>
+      
+      <!-- Bike frame -->
+      <path d="M50 120 Q100 80 150 120 Q200 80 250 120" stroke="currentColor" stroke-width="3" fill="none" opacity="0.8"/>
+      
+      <!-- Wheels -->
+      <circle cx="80" cy="140" r="25" stroke="currentColor" stroke-width="2" fill="none" opacity="0.6"/>
+      <circle cx="220" cy="140" r="25" stroke="currentColor" stroke-width="2" fill="none" opacity="0.6"/>
+      
+      <!-- Wheel spokes -->
+      <line x1="80" y1="115" x2="80" y2="165" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+      <line x1="55" y1="140" x2="105" y2="140" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+      <line x1="220" y1="115" x2="220" y2="165" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+      <line x1="195" y1="140" x2="245" y2="140" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+      
+      <!-- Handlebars -->
+      <path d="M50 120 Q45 100 50 80" stroke="currentColor" stroke-width="2" fill="none" opacity="0.7"/>
+      
+      <!-- Seat -->
+      <ellipse cx="120" cy="100" rx="15" ry="8" fill="currentColor" opacity="0.6"/>
+      
+      <!-- Pedals -->
+      <circle cx="80" cy="140" r="8" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
+      <line x1="80" y1="132" x2="80" y2="148" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+      
+      <!-- Chain -->
+      <path d="M80 140 Q150 100 220 140" stroke="currentColor" stroke-width="1" fill="none" opacity="0.3"/>
+      
+      <!-- Decorative elements -->
+      <circle cx="150" cy="50" r="3" fill="currentColor" opacity="0.4"/>
+      <circle cx="180" cy="60" r="2" fill="currentColor" opacity="0.3"/>
+      <circle cx="120" cy="40" r="2" fill="currentColor" opacity="0.3"/>
+      
+      <!-- Speed lines -->
+      <path d="M20 100 Q30 95 40 100" stroke="currentColor" stroke-width="1" fill="none" opacity="0.2"/>
+      <path d="M20 110 Q30 105 40 110" stroke="currentColor" stroke-width="1" fill="none" opacity="0.2"/>
+      <path d="M20 120 Q30 115 40 120" stroke="currentColor" stroke-width="1" fill="none" opacity="0.2"/>
+    </symbol>
+  </defs>
+  <use href="#hero-bike"/>
+</svg>
