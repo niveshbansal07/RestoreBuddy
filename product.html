@@ -249,7 +249,7 @@
             <h3 class="product-title">${product.name}</h3>
             <p class="product-description">${product.description}</p>
             <div class="product-rating">★★★★★ (${product.rating})</div>
-            <button class="product-btn" onclick="showPrice('${product.price}', this)">SHOW PRICE</button>
+            <button class="product-btn" onclick="showPrice('${product.link}', this)">SHOW PRICE</button>
           </div>
         `;
 
@@ -299,10 +299,8 @@
         });
 
         // Show price when button clicked
-        function showPrice(price, button) {
-            button.textContent = price;
-            button.disabled = true;
-            button.style.backgroundColor = '#555';
+        function showPrice(link) {
+            window.open(link, '_blank');
         }
 
     </script>
