@@ -201,6 +201,17 @@
     <!-- Main Content -->
     <main id="main-content">
 
+
+
+        <!-- Search Bar -->
+        <form class="navbar-search" action="product.html" method="get" role="search" aria-label="Site search">
+            <input type="text" name="query" class="search-input" placeholder="Search guides, tools..."
+                aria-label="Search">
+            <button type="submit" class="search-btn">🔍</button>
+        </form>
+
+        </div>
+
         <!-- Breadcrumb -->
         <!-- <nav class="breadcrumb" aria-label="Breadcrumb">
             <div class="container">
@@ -328,6 +339,19 @@
                 });
             })
             .catch(err => console.error("Error loading products:", err));
+    </script>
+    <script>
+             document.querySelector('.navbar-search').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const query = this.query.value.trim();
+
+            // Save query for use on product.html
+            localStorage.setItem('searchQuery', query);
+
+            // Redirect to product.html
+            window.location.href = 'product.html';
+        });
+
     </script>
     <script src="assets/js/nav-ftr.js"></script>
 </body>

@@ -117,11 +117,7 @@
                         aria-label="Search">
                     <button type="submit" class="search-btn">🔍</button>
                 </form>
-                <!-- 
-                <button class="btn-primary"
-                    onclick="document.querySelector('.blog-section').scrollIntoView({behavior: 'smooth'})">
-                    Start Restoring
-                </button> -->
+
             </div>
 
             <!-- Hero Illustration -->
@@ -254,54 +250,12 @@
         </div>
     </div>
 
-    <!-- Analytics Placeholder -->
-    <!-- Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID', {
-            'anonymize_ip': true,
-            'cookie_flags': 'SameSite=None;Secure'
-        });
-    </script> -->
+
 
     <!-- Scripts -->
     <script defer src="assets/js/scripts.js"></script>
 
-    <!-- <script>
-
-        document.querySelector('.hero-content .navbar-search').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const query = this.q.value.trim().toLowerCase();
-            const products = document.querySelectorAll('.product-card');
-            let found = false;
-
-            products.forEach(card => {
-                const title = card.querySelector('.product-title').textContent.toLowerCase();
-                const desc = card.querySelector('.product-description').textContent.toLowerCase();
-                if (title.includes(query) || desc.includes(query)) {
-                    card.style.display = '';
-                    found = true;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-
-            // If nothing found, show a message
-            let msg = document.getElementById('search-msg');
-            if (!msg) {
-                msg = document.createElement('div');
-                msg.id = 'search-msg';
-                msg.style.color = 'red';
-                msg.style.textAlign = 'center';
-                msg.style.marginTop = '1rem';
-                document.querySelector('.products-section .container').appendChild(msg);
-            }
-            msg.textContent = found ? '' : 'No products found for "' + query + '"';
-        });
-    </script> -->
+   
 
     <script>
         document.querySelector('.navbar-search').addEventListener('submit', function (e) {
