@@ -90,6 +90,80 @@
         }
     }
     </script>
+
+    <style>
+        /* Product container */
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+            gap: 1.5rem;
+        }
+
+        /* Product card */
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .product-card .product-content {
+            padding: 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-description {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+            flex: 1;
+        }
+
+        .product-rating {
+            color: #ffbb00;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-btn {
+            padding: 0.5rem;
+            background-color: #ff6600;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .product-btn:hover {
+            background-color: #e65c00;
+        }
+    </style>
 </head>
 
 <body>
@@ -134,95 +208,19 @@
 
 
         <!-- Product Highlights Section -->
-        <section class="products-section">
-            <div class="container">
-                <div class="products-grid">
-                    <!-- Product Card 1 -->
-                    <article class="product-card" data-product-id="orbital-sander-pro" data-sku="OSP-X-001"
-                        data-price="89.99">
-                        <div class="product-image">
-                            <img src="assets/images/product-1.jpg"
-                                alt="Orbital Sander Pro - Professional grade orbital sander" loading="lazy"
-                                srcset="assets/images/product-1-400.jpg 400w, assets/images/product-1-800.jpg 800w"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Orbital Sander Pro — Model X</h3>
-                            <p class="product-description">Professional grade orbital sander perfect for paint removal
-                                and surface preparation.</p>
-                            <div class="product-price">$89.99</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="rating-text">(4.8/5)</span>
-                            </div>
-                            <a href="https://affiliate.example.com/track?product=orbital-sander-pro" class="product-btn"
-                                target="_blank" rel="sponsored noopener noreferrer"
-                                data-affiliate-id="orbital-sander-pro">
-                                Buy on Seller
-                            </a>
-                            <p class="affiliate-disclosure">Price updated daily — check seller page</p>
-                        </div>
-                    </article>
-
-                    <!-- Product Card 2 -->
-                    <article class="product-card" data-product-id="restoration-paint-kit" data-sku="RPK-2025"
-                        data-price="149.99">
-                        <div class="product-image">
-                            <img src="assets/images/product-2.jpg"
-                                alt="Complete restoration paint kit with primer and clear coat" loading="lazy"
-                                srcset="assets/images/product-2-400.jpg 400w, assets/images/product-2-800.jpg 800w"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Complete Restoration Paint Kit</h3>
-                            <p class="product-description">Everything you need for professional paint restoration:
-                                primer, base coat, and clear coat.</p>
-                            <div class="product-price">$149.99</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span class="rating-text">(4.6/5)</span>
-                            </div>
-                            <a href="https://affiliate.example.com/track?product=restoration-paint-kit"
-                                class="product-btn" target="_blank" rel="sponsored noopener noreferrer"
-                                data-affiliate-id="restoration-paint-kit">
-                                Buy on Seller
-                            </a>
-                            <p class="affiliate-disclosure">Price updated daily — check seller page</p>
-                        </div>
-                    </article>
-
-                    <!-- Product Card 3 -->
-                    <article class="product-card" data-product-id="polishing-compound-set" data-sku="PCS-PRO"
-                        data-price="34.99">
-                        <div class="product-image">
-                            <img src="assets/images/product-3.jpg"
-                                alt="Professional polishing compound set for metal restoration" loading="lazy"
-                                srcset="assets/images/product-3-400.jpg 400w, assets/images/product-3-800.jpg 800w"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Professional Polishing Compound Set</h3>
-                            <p class="product-description">Complete set of polishing compounds for achieving mirror
-                                finish on metal surfaces.</p>
-                            <div class="product-price">$34.99</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="rating-text">(4.9/5)</span>
-                            </div>
-                            <a href="https://affiliate.example.com/track?product=polishing-compound-set"
-                                class="product-btn" target="_blank" rel="sponsored noopener noreferrer"
-                                data-affiliate-id="polishing-compound-set">
-                                Buy on Seller
-                            </a>
-                            <p class="affiliate-disclosure">Price updated daily — check seller page</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <!-- <section id="product-section">
+            <h2>Our Products</h2>
+            <iframe src="product.html" width="80%" height="800px" frameborder="0"
+                style="border-radius: 10px; overflow: hidden;">
+            </iframe>
+        </section> -->
+         <div class="product-container" id="product-container">
+            <!-- Product cards will be populated here by JS -->
+        </div>
 
         <!-- Tools Filter Section -->
-        <section class="tools-section">
+
+        <!-- <section class="tools-section">
             <div class="container">
                 <h2>Tools by Category</h2>
                 <div class="tools-filter">
@@ -233,7 +231,7 @@
                     <button class="filter-btn" data-category="hand-tools">Hand Tools</button>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- Footer -->
@@ -271,6 +269,33 @@
             window.location.href = 'product.html';
         });
     </script>
+
+    <script>
+        // Load products from JSON and populate HTML
+        fetch('products.json')
+            .then(response => response.json())
+            .then(products => {
+                const container = document.getElementById('product-container');
+
+                products.forEach(product => {
+                    const card = document.createElement('div');
+                    card.classList.add('product-card');
+
+                    card.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <div class="product-content">
+          <h3 class="product-title">${product.name}</h3>
+          <p class="product-description">${product.description}</p>
+          <div class="product-rating">★★★★★ (${product.rating})</div>
+          <button class="product-btn" onclick="alert('Price: ${product.price}')">SHOW PRICE</button>
+        </div>
+      `;
+                    container.appendChild(card);
+                });
+            })
+            .catch(err => console.error("Error loading products:", err));
+    </script>
+
     <script src="assets/js/nav-ftr.js"></script>
 </body>
 

@@ -121,7 +121,7 @@
 
     <style>
         /* Product container */
-        .container {
+        .product-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -227,7 +227,7 @@
 
 
 
-        <div class="container" id="product-container">
+        <div class="product-container" id="product-container">
             <!-- Product cards will be populated here by JS -->
         </div>
 
@@ -317,6 +317,7 @@
         }
 
     </script>
+    
     <script>
         // Load products from JSON and populate HTML
         fetch('products.json')
@@ -342,6 +343,7 @@
             })
             .catch(err => console.error("Error loading products:", err));
     </script>
+
     <script>
         document.querySelector('.navbar-search').addEventListener('submit', function (e) {
             e.preventDefault();
