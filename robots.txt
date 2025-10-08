@@ -1,0 +1,51 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://restorebuddy.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all search engines to index all content
+# No restrictions on crawling or indexing
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block access to admin areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Block access to temporary files
+# Disallow: /tmp/
+# Disallow: /cache/
+
+# Allow access to CSS and JS files for proper rendering
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+Allow: /assets/svg/
+
+# Allow access to all public content
+Allow: /blog/
+Allow: /shop/
+Allow: /about
+Allow: /contact
+Allow: /tools
+Allow: /guides
+Allow: /tips
+Allow: /community
+
+# Host directive (replace with actual domain)
+# Host: restorebuddy.com
