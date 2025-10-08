@@ -1,0 +1,153 @@
+/* ========== Navbar ========== */
+.navbar {
+  background-color: #111;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-search input {
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  width: 180px;
+  transition: box-shadow 0.3s;
+}
+
+.navbar-search input:focus {
+  box-shadow: 0 0 5px #ff6600;
+}
+
+.navbar-search button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.navbar-search button:hover {
+  background-color: #e65c00;
+}
+
+/* ========== Footer ========== */
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer .footer-container p {
+  margin-bottom: 1rem;
+}
+
+.footer .social-links a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: #ff6600;
+}
+
+/* ========== Product Cards ========== */
+.product-info {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.product-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.product-description {
+  margin: 0.5rem 0 1rem 0;
+  color: #555;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6600;
+  margin-bottom: 1rem;
+}
+
+.product-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.product-btn:hover {
+  background-color: #e65c00;
+}
+
+/* Search message */
+#search-msg {
+  text-align: center;
+  color: red;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
