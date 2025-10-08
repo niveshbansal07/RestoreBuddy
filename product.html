@@ -116,6 +116,79 @@
 
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <style>
+        /* Product container */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+            gap: 1.5rem;
+        }
+
+        /* Product card */
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .product-card .product-content {
+            padding: 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-description {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+            flex: 1;
+        }
+
+        .product-rating {
+            color: #ffbb00;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-btn {
+            padding: 0.5rem;
+            background-color: #ff6600;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .product-btn:hover {
+            background-color: #e65c00;
+        }
+    </style>
 </head>
 
 <body>
@@ -129,7 +202,7 @@
     <main id="main-content">
 
         <!-- Breadcrumb -->
-        <nav class="breadcrumb" aria-label="Breadcrumb">
+        <!-- <nav class="breadcrumb" aria-label="Breadcrumb">
             <div class="container">
                 <ol class="breadcrumb-list">
                     <li><a href="/">Home</a></li>
@@ -137,424 +210,14 @@
                     <li aria-current="page">Orbital Sander Pro Model X</li>
                 </ol>
             </div>
-        </nav>
-
-
-        <!-- Product Detail -->
-        <section class="product-detail">
-            <div class="container">
-                <div class="product-layout">
-
-
-                    <div class="product-info">
-                        <h1 class="product-title">Orbital Sander Pro — Model X</h1>
-                        <div class="product-rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="rating-text">4.8/5 (127 reviews)</span>
-                        </div>
-                        <div class="product-price">$89.99</div>
-                        <p class="product-description">Professional grade orbital sander perfect for paint removal and
-                            surface preparation. Features variable speed control, ergonomic design, and comes with
-                            multiple sanding pads for different applications.</p>
-
-                        <div class="product-features">
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>Variable speed control (2,000-6,000 RPM)</li>
-                                <li>Ergonomic grip design</li>
-                                <li>Low vibration technology</li>
-                                <li>Dust collection system</li>
-                                <li>Multiple sanding pad sizes included</li>
-                                <li>2-year manufacturer warranty</li>
-                            </ul>
-                        </div>
-
-                        <div class="product-specifications">
-                            <h3>Specifications</h3>
-                            <table>
-                                <tr>
-                                    <td>Power</td>
-                                    <td>300W</td>
-                                </tr>
-                                <tr>
-                                    <td>Speed Range</td>
-                                    <td>2,000-6,000 RPM</td>
-                                </tr>
-                                <tr>
-                                    <td>Pad Size</td>
-                                    <td>5-inch</td>
-                                </tr>
-                                <tr>
-                                    <td>Weight</td>
-                                    <td>2.2 lbs</td>
-                                </tr>
-                                <tr>
-                                    <td>Warranty</td>
-                                    <td>2 years</td>
-                                </tr>
-                            </table>
-                        </div>
-
-                        <div class="product-actions">
-                            <a href="https://affiliate.example.com/track?product=orbital-sander-pro"
-                                class="product-btn primary" target="_blank" rel="sponsored noopener noreferrer"
-                                data-affiliate-id="orbital-sander-pro">
-                                Buy on Seller - $89.99
-                            </a>
-                            <p class="affiliate-disclosure">Price updated daily — check seller page</p>
-                        </div>
-                    </div>
-
-                    <div class="product-info">
-                        <h1 class="product-title">Orbital Sander Pro — Model X</h1>
-                        <div class="product-rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="rating-text">4.8/5 (127 reviews)</span>
-                        </div>
-                        <div class="product-price">$89.99</div>
-                        <p class="product-description">Professional grade orbital sander perfect for paint removal and
-                            surface preparation. Features variable speed control, ergonomic design, and comes with
-                            multiple sanding pads for different applications.</p>
-
-                        <div class="product-features">
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>Variable speed control (2,000-6,000 RPM)</li>
-                                <li>Ergonomic grip design</li>
-                                <li>Low vibration technology</li>
-                                <li>Dust collection system</li>
-                                <li>Multiple sanding pad sizes included</li>
-                                <li>2-year manufacturer warranty</li>
-                            </ul>
-                        </div>
-
-                        <div class="product-specifications">
-                            <h3>Specifications</h3>
-                            <table>
-                                <tr>
-                                    <td>Power</td>
-                                    <td>300W</td>
-                                </tr>
-                                <tr>
-                                    <td>Speed Range</td>
-                                    <td>2,000-6,000 RPM</td>
-                                </tr>
-                                <tr>
-                                    <td>Pad Size</td>
-                                    <td>5-inch</td>
-                                </tr>
-                                <tr>
-                                    <td>Weight</td>
-                                    <td>2.2 lbs</td>
-                                </tr>
-                                <tr>
-                                    <td>Warranty</td>
-                                    <td>2 years</td>
-                                </tr>
-                            </table>
-                        </div>
-
-                        <div class="product-actions">
-                            <a href="https://affiliate.example.com/track?product=orbital-sander-pro"
-                                class="product-btn primary" target="_blank" rel="sponsored noopener noreferrer"
-                                data-affiliate-id="orbital-sander-pro">
-                                Buy on Seller - $89.99
-                            </a>
-                            <p class="affiliate-disclosure">Price updated daily — check seller page</p>
-                        </div>
-                    </div>
-
-
-                    <div class="product-info">
-                        <h1 class="product-title">bike X</h1>
-                        <div class="product-rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="rating-text">4.8/5 (127 reviews)</span>
-                        </div>
-                        <div class="product-price">$89.99</div>
-                        <p class="product-description">Professional grade orbital sander perfect for paint removal and
-                            surface preparation. Features variable speed control, ergonomic design, and comes with
-                            multiple sanding pads for different applications.</p>
-
-                        <div class="product-features">
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>Variable speed control (2,000-6,000 RPM)</li>
-                                <li>Ergonomic grip design</li>
-                                <li>Low vibration technology</li>
-                                <li>Dust collection system</li>
-                                <li>Multiple sanding pad sizes included</li>
-                                <li>2-year manufacturer warranty</li>
-                            </ul>
-                        </div>
-
-                        <div class="product-specifications">
-                            <h3>Specifications</h3>
-                            <table>
-                                <tr>
-                                    <td>Power</td>
-                                    <td>300W</td>
-                                </tr>
-                                <tr>
-                                    <td>Speed Range</td>
-                                    <td>2,000-6,000 RPM</td>
-                                </tr>
-                                <tr>
-                                    <td>Pad Size</td>
-                                    <td>5-inch</td>
-                                </tr>
-                                <tr>
-                                    <td>Weight</td>
-                                    <td>2.2 lbs</td>
-                                </tr>
-                                <tr>
-                                    <td>Warranty</td>
-                                    <td>2 years</td>
-                                </tr>
-                            </table>
-                        </div>
-
-                        <div class="product-actions">
-                            <a href="https://affiliate.example.com/track?product=orbital-sander-pro"
-                                class="product-btn primary" target="_blank" rel="sponsored noopener noreferrer"
-                                data-affiliate-id="orbital-sander-pro">
-                                Buy on Seller - $89.99
-                            </a>
-                            <p class="affiliate-disclosure">Price updated daily — check seller page</p>
-                        </div>
-                    </div>
+        </nav> -->
 
 
 
-                    <div class="product-info">
-                        <h1 class="product-title">cleaner Model X</h1>
-                        <div class="product-rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="rating-text">4.8/5 (127 reviews)</span>
-                        </div>
-                        <div class="product-price">$89.99</div>
-                        <p class="product-description">Professional grade orbital sander perfect for paint removal and
-                            surface preparation. Features variable speed control, ergonomic design, and comes with
-                            multiple sanding pads for different applications.</p>
+        <div class="container" id="product-container">
+            <!-- Product cards will be populated here by JS -->
+        </div>
 
-                        <div class="product-features">
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>Variable speed control (2,000-6,000 RPM)</li>
-                                <li>Ergonomic grip design</li>
-                                <li>Low vibration technology</li>
-                                <li>Dust collection system</li>
-                                <li>Multiple sanding pad sizes included</li>
-                                <li>2-year manufacturer warranty</li>
-                            </ul>
-                        </div>
-
-                        <div class="product-specifications">
-                            <h3>Specifications</h3>
-                            <table>
-                                <tr>
-                                    <td>Power</td>
-                                    <td>300W</td>
-                                </tr>
-                                <tr>
-                                    <td>Speed Range</td>
-                                    <td>2,000-6,000 RPM</td>
-                                </tr>
-                                <tr>
-                                    <td>Pad Size</td>
-                                    <td>5-inch</td>
-                                </tr>
-                                <tr>
-                                    <td>Weight</td>
-                                    <td>2.2 lbs</td>
-                                </tr>
-                                <tr>
-                                    <td>Warranty</td>
-                                    <td>2 years</td>
-                                </tr>
-                            </table>
-                        </div>
-
-                        <div class="product-actions">
-                            <a href="https://affiliate.example.com/track?product=orbital-sander-pro"
-                                class="product-btn primary" target="_blank" rel="sponsored noopener noreferrer"
-                                data-affiliate-id="orbital-sander-pro">
-                                Buy on Seller - $89.99
-                            </a>
-                            <p class="affiliate-disclosure">Price updated daily — check seller page</p>
-                        </div>
-                    </div>
-
-
-                    <div class="product-info">
-                        <h1 class="product-title">spray Pro — Model X</h1>
-                        <div class="product-rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="rating-text">4.8/5 (127 reviews)</span>
-                        </div>
-                        <div class="product-price">$89.99</div>
-                        <p class="product-description">Professional grade orbital sander perfect for paint removal and
-                            surface preparation. Features variable speed control, ergonomic design, and comes with
-                            multiple sanding pads for different applications.</p>
-
-                        <div class="product-features">
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>Variable speed control (2,000-6,000 RPM)</li>
-                                <li>Ergonomic grip design</li>
-                                <li>Low vibration technology</li>
-                                <li>Dust collection system</li>
-                                <li>Multiple sanding pad sizes included</li>
-                                <li>2-year manufacturer warranty</li>
-                            </ul>
-                        </div>
-
-                        <div class="product-specifications">
-                            <h3>Specifications</h3>
-                            <table>
-                                <tr>
-                                    <td>Power</td>
-                                    <td>300W</td>
-                                </tr>
-                                <tr>
-                                    <td>Speed Range</td>
-                                    <td>2,000-6,000 RPM</td>
-                                </tr>
-                                <tr>
-                                    <td>Pad Size</td>
-                                    <td>5-inch</td>
-                                </tr>
-                                <tr>
-                                    <td>Weight</td>
-                                    <td>2.2 lbs</td>
-                                </tr>
-                                <tr>
-                                    <td>Warranty</td>
-                                    <td>2 years</td>
-                                </tr>
-                            </table>
-                        </div>
-
-                        <div class="product-actions">
-                            <a href="https://affiliate.example.com/track?product=orbital-sander-pro"
-                                class="product-btn primary" target="_blank" rel="sponsored noopener noreferrer"
-                                data-affiliate-id="orbital-sander-pro">
-                                Buy on Seller - $89.99
-                            </a>
-                            <p class="affiliate-disclosure">Price updated daily — check seller page</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Reviews -->
-                <section class="product-reviews">
-                    <h2>Customer Reviews</h2>
-                    <div class="reviews-summary">
-                        <div class="rating-breakdown">
-                            <div class="rating-bar">
-                                <span>5 stars</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 75%"></div>
-                                </div>
-                                <span>95</span>
-                            </div>
-                            <div class="rating-bar">
-                                <span>4 stars</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 20%"></div>
-                                </div>
-                                <span>25</span>
-                            </div>
-                            <div class="rating-bar">
-                                <span>3 stars</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 3%"></div>
-                                </div>
-                                <span>4</span>
-                            </div>
-                            <div class="rating-bar">
-                                <span>2 stars</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 1%"></div>
-                                </div>
-                                <span>2</span>
-                            </div>
-                            <div class="rating-bar">
-                                <span>1 star</span>
-                                <div class="bar">
-                                    <div class="fill" style="width: 1%"></div>
-                                </div>
-                                <span>1</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="reviews-list">
-                        <article class="review">
-                            <div class="review-header">
-                                <div class="reviewer-info">
-                                    <h4>Mike R.</h4>
-                                    <div class="review-rating">★★★★★</div>
-                                </div>
-                                <time datetime="2025-01-05">January 5, 2025</time>
-                            </div>
-                            <p>"This sander made my restoration project so much easier. The variable speed control is
-                                perfect for different materials, and the low vibration design means I can work for hours
-                                without fatigue."</p>
-                        </article>
-
-                        <article class="review">
-                            <div class="review-header">
-                                <div class="reviewer-info">
-                                    <h4>Sarah K.</h4>
-                                    <div class="review-rating">★★★★★</div>
-                                </div>
-                                <time datetime="2025-01-03">January 3, 2025</time>
-                            </div>
-                            <p>"Excellent build quality and the dust collection system actually works! Used it on my
-                                vintage bike restoration and the results were professional-grade."</p>
-                        </article>
-
-                        <article class="review">
-                            <div class="review-header">
-                                <div class="reviewer-info">
-                                    <h4>Tom L.</h4>
-                                    <div class="review-rating">★★★★☆</div>
-                                </div>
-                                <time datetime="2024-12-28">December 28, 2024</time>
-                            </div>
-                            <p>"Great sander for the price. The ergonomic design is comfortable, and it comes with
-                                everything you need to get started. Would recommend for any restoration project."</p>
-                        </article>
-                    </div>
-                </section>
-
-                <!-- Related Products -->
-                <section class="related-products">
-                    <h2>You Might Also Like</h2>
-                    <div class="related-grid">
-                        <article class="related-card">
-                            <img src="assets/images/product-2.jpg" alt="Complete restoration paint kit" loading="lazy">
-                            <div class="related-content">
-                                <h3>Complete Restoration Paint Kit</h3>
-                                <div class="related-price">$149.99</div>
-                                <a href="product.html" class="related-link">View Details</a>
-                            </div>
-                        </article>
-
-                        <article class="related-card">
-                            <img src="assets/images/product-3.jpg" alt="Professional polishing compound set"
-                                loading="lazy">
-                            <div class="related-content">
-                                <h3>Professional Polishing Compound Set</h3>
-                                <div class="related-price">$34.99</div>
-                                <a href="product.html" class="related-link">View Details</a>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -564,123 +227,109 @@
     <!-- Scripts -->
     <script defer src="assets/js/scripts.js"></script>
 
-    <!-- <script>
-        // Get the URL parameter ?query=value
-        const params = new URLSearchParams(window.location.search);
-        const searchQuery = params.get('query');
-
-        if (searchQuery) {
-            document.getElementById("search-result").textContent =
-                `Showing results for "${searchQuery}"`;
-
-            // Example: filter products dynamically (if you have a list)
-            const products = document.querySelectorAll(".product");
-            products.forEach(p => {
-                if (!p.textContent.toLowerCase().includes(searchQuery.toLowerCase())) {
-                    p.style.display = "none";
-                } else {
-                    p.style.display = "block";
-                }
-            });
-        }
-    </script> -->
-
-
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const query = localStorage.getItem('searchQuery');
-            const products = document.querySelectorAll('.product-card');
-            const msgContainer = document.querySelector('.products-section .container');
-            let found = false;
-
-            if (query && products.length > 0) {
-                const searchText = query.trim().toLowerCase();
-
-                products.forEach(card => {
-                    const title = card.querySelector('.product-title').textContent.toLowerCase();
-                    const desc = card.querySelector('.product-description').textContent.toLowerCase();
-                    if (title.includes(searchText) || desc.includes(searchText)) {
-                        card.style.display = '';
-                        found = true;
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-
-                // Show search message
-                let msg = document.getElementById('search-msg');
-                if (!msg) {
-                    msg = document.createElement('div');
-                    msg.id = 'search-msg';
-                    msg.style.color = 'red';
-                    msg.style.textAlign = 'center';
-                    msg.style.marginTop = '1rem';
-                    msgContainer.appendChild(msg);
-                }
-
-                msg.textContent = found ? '' : `No products found for "${query}"`;
-            }
-
-            // Clear the search so it doesn’t persist next time
-            localStorage.removeItem('searchQuery');
-        });
-    </script> -->
-
-
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Get search query from localStorage (sent from index.html)
+            // Get stored search query (sent from index.html)
             const query = localStorage.getItem('searchQuery');
-            const products = document.querySelectorAll('.product-info');
-            const container = document.querySelector('.products-section .container') || document.body;
-            let found = false;
 
-            if (query && products.length > 0) {
-                const searchText = query.trim().toLowerCase();
+            // Fetch products first
+            fetch('products.json')
+                .then(response => response.json())
+                .then(products => {
+                    const container = document.getElementById('product-container');
+                    container.innerHTML = ''; // Clear before adding new cards
+
+                    products.forEach(product => {
+                        const card = document.createElement('div');
+                        card.classList.add('product-card');
+
+                        card.innerHTML = `
+          <img src="${product.image}" alt="${product.name}">
+          <div class="product-content">
+            <h3 class="product-title">${product.name}</h3>
+            <p class="product-description">${product.description}</p>
+            <div class="product-rating">★★★★★ (${product.rating})</div>
+            <button class="product-btn" onclick="showPrice('${product.price}', this)">SHOW PRICE</button>
+          </div>
+        `;
+
+                        container.appendChild(card);
+                    });
+
+                    // After products are added → perform search if query exists
+                    if (query) {
+                        const searchText = query.trim().toLowerCase();
+                        const cards = document.querySelectorAll('.product-card');
+                        let found = false;
+
+                        cards.forEach(card => {
+                            const title = card.querySelector('.product-title').textContent.toLowerCase();
+                            const desc = card.querySelector('.product-description').textContent.toLowerCase();
+
+                            if (title.includes(searchText) || desc.includes(searchText)) {
+                                card.style.display = '';
+                                found = true;
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+
+                        // Show message
+                        let msg = document.getElementById('search-msg');
+                        if (!msg) {
+                            msg = document.createElement('div');
+                            msg.id = 'search-msg';
+                            msg.style.color = found ? 'green' : 'red';
+                            msg.style.textAlign = 'center';
+                            msg.style.fontSize = '1.2rem';
+                            msg.style.fontWeight = 'bold';
+                            msg.style.margin = '1rem 0';
+                            container.parentNode.insertBefore(msg, container);
+                        }
+
+                        msg.textContent = found
+                            ? `Showing results for "${query}"`
+                            : `No products found for "${query}"`;
+                    }
+
+                    // Clear search query so it doesn’t persist
+                    localStorage.removeItem('searchQuery');
+                })
+                .catch(err => console.error("Error loading products:", err));
+        });
+
+        // Show price when button clicked
+        function showPrice(price, button) {
+            button.textContent = price;
+            button.disabled = true;
+            button.style.backgroundColor = '#555';
+        }
+
+    </script>
+    <script>
+        // Load products from JSON and populate HTML
+        fetch('products.json')
+            .then(response => response.json())
+            .then(products => {
+                const container = document.getElementById('product-container');
 
                 products.forEach(product => {
-                    const title = product.querySelector('.product-title').textContent.toLowerCase();
-                    const desc = product.querySelector('.product-description').textContent.toLowerCase();
+                    const card = document.createElement('div');
+                    card.classList.add('product-card');
 
-                    if (title.includes(searchText) || desc.includes(searchText)) {
-                        product.style.display = ''; // Show matching product
-                        found = true;
-                    } else {
-                        product.style.display = 'none'; // Hide non-matching product
-                    }
+                    card.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <div class="product-content">
+          <h3 class="product-title">${product.name}</h3>
+          <p class="product-description">${product.description}</p>
+          <div class="product-rating">★★★★★ (${product.rating})</div>
+          <button class="product-btn" onclick="alert('Price: ${product.price}')">SHOW PRICE</button>
+        </div>
+      `;
+                    container.appendChild(card);
                 });
-
-                // Show search message
-                let msg = document.getElementById('search-msg');
-                if (!msg) {
-                    msg = document.createElement('div');
-                    msg.id = 'search-msg';
-                    msg.style.color = 'green';
-                    msg.style.textAlign = 'center';
-                    // msg.style.marginTop = '1rem';
-                    msg.style.fontSize = '1.2rem';
-                    msg.style.fontWeight = 'bold';
-                    msg.style.display = 'flex';
-                    msg.style.justifyContent = 'center';
-                    msg.style.alignItems = 'center';
-                    msg.style.gap = '0.5rem';
-
-                    const breadcrumb = document.querySelector('.breadcrumb');
-                    if (breadcrumb && breadcrumb.parentNode) {
-                        breadcrumb.parentNode.insertBefore(msg, breadcrumb.nextSibling);
-                    } else {
-                        container.prepend(msg); // fallback
-                    }
-
-                    // container.prepend(); // show message at top
-                }
-
-                msg.textContent = found ? `Showing results for "${query}"` : `No products found for "${query}"`;
-            }
-
-            // Clear localStorage so search doesn't persist
-            localStorage.removeItem('searchQuery');
-        });
+            })
+            .catch(err => console.error("Error loading products:", err));
     </script>
     <script src="assets/js/nav-ftr.js"></script>
 </body>

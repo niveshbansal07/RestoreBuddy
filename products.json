@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Orbital Sander Pro — Model X",
+    "description": "Professional grade orbital sander perfect for paint removal and surface preparation. Features variable speed control, ergonomic design, and multiple sanding pads.",
+    "image": "https://via.placeholder.com/250x150.png?text=Orbital+Sander",
+    "rating": 4.8,
+    "lin": "$89.99"
+  },
+  {
+    "id": 2,
+    "name": "Cordless Drill Master 5000",
+    "description": "High-performance cordless drill with variable speed, long battery life, and ergonomic grip.",
+    "image": "https://via.placeholder.com/250x150.png?text=Cordless+Drill",
+    "rating": 4.5,
+    "price": "$129.99"
+  },
+  {
+    "id": 3,
+    "name": "Precision Screwdriver Set",
+    "description": "Complete set of precision screwdrivers for electronics and small repair work. Durable and comfortable handles.",
+    "image": "https://via.placeholder.com/250x150.png?text=Screwdriver+Set",
+    "rating": 4.7,
+    "price": "$24.99"
+  }
+]
