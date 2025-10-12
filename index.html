@@ -13,34 +13,19 @@
     <meta name="google-adsense-account" content="ca-pub-8452146197004922">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://restorebuddy.com/">
+    <link rel="canonical" href="https://restore-buddy.vercel.app/">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Restore Buddy - Bike Restoration, Tools & Tips">
     <meta property="og:description"
         content="Revive. Restore. Ride again. Expert bike restoration guides, tool reviews, and tips for vintage motorcycle enthusiasts.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://restorebuddy.com/">
-    <meta property="og:image" content="https://restorebuddy.com/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://restore-buddy.vercel.app/">
+    <meta property="og:image" content="https://restore-buddy.vercel.app/assets/images/logo.jfif">
     <meta property="og:site_name" content="Restore Buddy">
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Restore Buddy - Bike Restoration, Tools & Tips">
-    <meta name="twitter:description"
-        content="Revive. Restore. Ride again. Expert bike restoration guides, tool reviews, and tips for vintage motorcycle enthusiasts.">
-    <meta name="twitter:image" content="https://restorebuddy.com/assets/images/twitter-card.jpg">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8452146197004922"
-        crossorigin="anonymous"></script>
     <!-- Language and Hreflang -->
-    <link rel="alternate" hreflang="en" href="https://restorebuddy.com/">
-
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#0f6769">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Restore Buddy">
+    <link rel="alternate" hreflang="en" href="https://restore-buddy.vercel.app/">
 
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,40 +41,8 @@
 
     <title>Restore Buddy - Bike Restoration, Tools & Tips</title>
 
-    <!-- Critical CSS inline for hero area -->
-
-
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Restore Buddy",
-        "url": "https://restorebuddy.com",
-        "logo": "https://restorebuddy.com/assets/images/logo.png",
-        "description": "Expert bike restoration guides, tool reviews, and tips for vintage motorcycle enthusiasts.",
-        "sameAs": [
-            "https://instagram.com/restorebuddy"
-        ]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Restore Buddy",
-        "url": "https://restorebuddy.com",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://restorebuddy.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
 
     <style>
         /* Product container */
@@ -122,7 +75,7 @@
         .product-card img {
             width: 100%;
             height: 250px;
-            object-fit:cover;
+            object-fit: cover;
         }
 
         .product-card .product-content {
@@ -204,34 +157,9 @@
             </div>
         </section>
 
-        <!-- Blog Section -->
-
-
-        <!-- Product Highlights Section -->
-        <!-- <section id="product-section">
-            <h2>Our Products</h2>
-            <iframe src="product.html" width="80%" height="800px" frameborder="0"
-                style="border-radius: 10px; overflow: hidden;">
-            </iframe>
-        </section> -->
-         <div class="product-container" id="product-container">
+        <div class="product-container" id="product-container">
             <!-- Product cards will be populated here by JS -->
         </div>
-
-        <!-- Tools Filter Section -->
-
-        <!-- <section class="tools-section">
-            <div class="container">
-                <h2>Tools by Category</h2>
-                <div class="tools-filter">
-                    <button class="filter-btn active" data-category="all">All Tools</button>
-                    <button class="filter-btn" data-category="sanders">Sanders</button>
-                    <button class="filter-btn" data-category="paints">Paints</button>
-                    <button class="filter-btn" data-category="polish">Polish</button>
-                    <button class="filter-btn" data-category="hand-tools">Hand Tools</button>
-                </div>
-            </div>
-        </section> -->
     </main>
 
     <!-- Footer -->
@@ -295,9 +223,9 @@
             })
             .catch(err => console.error("Error loading products:", err));
 
-             function showPrice(link) {
+        function showPrice(link) {
             window.open(link, '_blank');
-             }
+        }
     </script>
 
     <script src="assets/js/nav-ftr.js"></script>
