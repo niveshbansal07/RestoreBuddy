@@ -38,6 +38,22 @@
     "image": "https://m.media-amazon.com/images/I/71r2oyU7vUL._SX569_.jpg",
     "rating": 4.0,
     "link": "https://amzn.to/3W3YsYj"
+  },
+   {
+    "id": 6,
+    "name": "Leather Motorcycle Gloves",
+    "description": "Probiker Synthetic Leather Motorcycle Gloves (Black, Medium)",
+    "image": "https://m.media-amazon.com/images/I/71dYrmlxQpL._SX569_.jpg",
+    "rating": 3.4,
+    "link": "https://amzn.to/48rK57E"
+  },
+   {
+    "id": 7,
+    "name": "Bike Riding Gloves for Men",
+    "description": "Yobbo Universal Orig Bike Riding Gloves for Men, Motorcycle Bike Racing Riding Gloves, Motorcycle Gloves (Black, XXL)",
+    "image": "https://m.media-amazon.com/images/I/71ykVL0tMcL._SX679_.jpg",
+    "rating": 4.5,
+    "link": "https://amzn.to/48wxIqZ"
   }
   
 ]
