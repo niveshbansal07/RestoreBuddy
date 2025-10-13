@@ -62,6 +62,22 @@
     "image": "https://m.media-amazon.com/images/I/61AeU055srL._SX679_.jpg",
     "rating": 3.5,
     "link": "https://amzn.to/3L6uG2I"
+  },
+   {
+    "id": 9,
+    "name": "MINI PRO Dash Cam",
+    "description": "DDPAI MINI PRO Dash Cam for Car, with Wi-Fi 3MP 1296P FHD+ Camera | Emergency Accident Lock | App Control | Night Vision 140° Wide Angle | Car Dashcam with G-Sensor | Built-in Super Capacitor, Mic",
+    "image": "https://m.media-amazon.com/images/I/61EG1az+lhL._SX679_.jpg",
+    "rating": 4.4,
+    "link": "https://amzn.to/4ocI7fN"
+  },
+   {
+    "id": 10,
+    "name": "Dashcam Pro X",
+    "description": "GoldMaxx GX6 Pro Dash Camera - 1080P Full HD, Built-in WiFi, G Sensor, 360° Rotatable, Superior Night Vision, Easy DIY Setup, Detachable Design",
+    "image": "https://m.media-amazon.com/images/I/71YCius40BL._SX679_.jpg",
+    "rating": 4.2,
+    "link": "https://amzn.to/4nYIIC0"
   }
   
 ]
