@@ -78,6 +78,22 @@
     "image": "https://m.media-amazon.com/images/I/71YCius40BL._SX679_.jpg",
     "rating": 4.2,
     "link": "https://amzn.to/4nYIIC0"
+  },
+   {
+    "id": 11,
+    "name": "STRIFF Mobile Holder",
+    "description": "STRIFF MoRide 1 Mobile Holder for Bikes, Bike Smartphone Holder, Mobile Stand for Bike, Phone Holder for Bikes GPS nevigation Firm Locking Anti Shake,360 Degree Rotation, bycle (Black)",
+    "image": "https://m.media-amazon.com/images/I/61e2ZV8jYNL._SX679_.jpg",
+    "rating": 4.1,
+    "link": "https://amzn.to/4n7i6xN"
+  },
+  {
+    "id": 12,
+    "name": "Portronics Mobile Holder",
+    "description": "Portronics Mobike 4 Bike Phone Mount with 360° Rotational, Strong Hold for Bicycle, Motorcycle Compatible with 4.7 to 6.8 inch Devices(Black)",
+    "image": "https://m.media-amazon.com/images/I/61V5Izz75UL._SX679_.jpg",
+    "rating": 4.1,
+    "link": "https://amzn.to/3KO4FVZ"
   }
   
 ]
