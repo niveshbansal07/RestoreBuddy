@@ -116,6 +116,112 @@
         .product-btn:hover {
             background-color: #e65c00;
         }
+
+        .deal-card {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            width: 100%;
+            max-width: 760px;
+            padding: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 14px;
+            text-decoration: none;
+            color: #fff;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+            transition: 0.2s ease;
+            margin: 10px auto;
+        }
+
+        .deal-left {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 255, 150, 0.12);
+            border: 1px solid rgba(0, 255, 150, 0.18);
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .deal-icon {
+            width: 40px;
+            height: 40px;
+            color: #00ff9d;
+        }
+
+        .deal-body h3 {
+            margin: 0 0 8px 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .deal-list {
+            margin: 0 0 14px 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px 12px;
+            font-size: 14px;
+            color: black;
+        }
+
+        .deal-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .notify {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 10px;
+            border-radius: 10px;
+            font-size: 13px;
+            color: rgb(255, 115, 0);
+
+        }
+
+        .deal-btn {
+            padding: 10px 14px;
+            background: linear-gradient(90deg, #00ff9d, #00c4ff);
+            border: none;
+            border-radius: 10px;
+            color: #041d14;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .deal-btn:active {
+            transform: scale(0.96);
+        }
+
+        /* Responsive */
+        @media (max-width: 520px) {
+            .deal-card {
+                flex-direction: row;
+                gap: 12px;
+                padding: 14px;
+            }
+
+            .deal-left {
+                width: 55px;
+                height: 55px;
+            }
+
+            .deal-list {
+                grid-template-columns: 1fr;
+                font-size: 13px;
+            }
+
+            .deal-footer {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+        }
     </style>
 </head>
 
@@ -125,8 +231,9 @@
 
     <!-- Header with animated navbar -->
     <div id="navbar-placeholder"></div>
-<script async="async" data-cfasync="false" src="//pl27834384.effectivegatecpm.com/3e1d263b7aaf7c81ae2a2f2be22dc4e4/invoke.js"></script>
-<div id="container-3e1d263b7aaf7c81ae2a2f2be22dc4e4"></div>
+    <script async="async" data-cfasync="false"
+        src="//pl27834384.effectivegatecpm.com/3e1d263b7aaf7c81ae2a2f2be22dc4e4/invoke.js"></script>
+    <div id="container-3e1d263b7aaf7c81ae2a2f2be22dc4e4"></div>
 
     <!-- Main Content -->
     <main id="main-content">
@@ -158,10 +265,36 @@
             </div>
         </section>
 
+        <a class="deal-card" href="https://t.me/offerdealsplus" target="_blank">
+            <div class="deal-left">
+                <svg class="deal-icon" viewBox="0 0 24 24">
+                    <path d="M12 2L15 8l6 1-4.5 4 1 6L12 17l-6.5 2 1-6L2 9l6-1z" fill="currentColor" />
+                </svg>
+            </div>
+
+            <div class="deal-body">
+                <h3>Your one-stop place for:</h3>
+
+                <ul class="deal-list">
+                    <li>✔️ Loot Deals</li>
+                    <li>✔️ UPI Cashback Offers</li>
+                    <li>✔️ Online Shopping Discounts</li>
+                    <li>✔️ Bank & Wallet Offers</li>
+                    <li>✔️ Limited-Time Price Drops</li>
+                </ul>
+
+                <div class="deal-footer">
+                    <span class="notify">🔔 Turn ON notifications</span>
+                    <button class="deal-btn">Join & Save</button>
+                </div>
+            </div>
+        </a>
+
+
         <div class="product-container" id="product-container">
             <!-- Product cards will be populated here by JS -->
         </div>
-   
+
     </main>
 
     <!-- Footer -->
@@ -235,6 +368,3 @@
 
 
 </html>
-
-
-

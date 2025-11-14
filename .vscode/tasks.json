@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Open Chrome LiveServer",
+      "type": "shell",
+      "command": "start chrome http://127.0.0.1:5500",
+      "problemMatcher": []
+    }
+  ]
+}
